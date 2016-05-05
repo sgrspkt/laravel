@@ -7,6 +7,7 @@
          convertNoticesToExceptions="true"
          convertWarningsToExceptions="true"
          processIsolation="false"
+<<<<<<< HEAD
          stopOnFailure="false">
     <testsuites>
         <testsuite name="Application Test Suite">
@@ -27,4 +28,14 @@
         <env name="SESSION_DRIVER" value="array"/>
         <env name="QUEUE_DRIVER" value="sync"/>
     </php>
+=======
+         stopOnFailure="false"
+         syntaxCheck="false"
+>
+    <testsuites>
+        <testsuite name="Application Test Suite">
+            <directory>./app/tests/</directory>
+        </testsuite>
+    </testsuites>
+>>>>>>> a61f3c01af269b2f6ff6a32200732e22494623d0
 </phpunit>

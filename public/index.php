@@ -1,5 +1,8 @@
 <?php
+<<<<<<< HEAD
 
+=======
+>>>>>>> a61f3c01af269b2f6ff6a32200732e22494623d0
 /**
  * Laravel - A PHP Framework For Web Artisans
  *
@@ -12,10 +15,17 @@
 | Register The Auto Loader
 |--------------------------------------------------------------------------
 |
+<<<<<<< HEAD
 | Composer provides a convenient, automatically generated class loader for
 | our application. We just need to utilize it! We'll simply require it
 | into the script here so that we don't have to worry about manual
 | loading any of our classes later on. It feels nice to relax.
+=======
+| Composer provides a convenient, automatically generated class loader
+| for our application. We just need to utilize it! We'll require it
+| into the script here so that we do not have to worry about the
+| loading of any our classes "manually". Feels great to relax.
+>>>>>>> a61f3c01af269b2f6ff6a32200732e22494623d0
 |
 */
 
@@ -26,6 +36,7 @@ require __DIR__.'/../bootstrap/autoload.php';
 | Turn On The Lights
 |--------------------------------------------------------------------------
 |
+<<<<<<< HEAD
 | We need to illuminate PHP development, so let us turn on the lights.
 | This bootstraps the framework and gets it ready for use, then it
 | will load up this application so that we can run it and send
@@ -34,12 +45,23 @@ require __DIR__.'/../bootstrap/autoload.php';
 */
 
 $app = require_once __DIR__.'/../bootstrap/app.php';
+=======
+| We need to illuminate PHP development, so let's turn on the lights.
+| This bootstraps the framework and gets it ready for use, then it
+| will load up this application so that we can run it and send
+| the responses back to the browser and delight these users.
+|
+*/
+
+$app = require_once __DIR__.'/../bootstrap/start.php';
+>>>>>>> a61f3c01af269b2f6ff6a32200732e22494623d0
 
 /*
 |--------------------------------------------------------------------------
 | Run The Application
 |--------------------------------------------------------------------------
 |
+<<<<<<< HEAD
 | Once we have the application, we can handle the incoming request
 | through the kernel, and send the associated response back to
 | the client's browser allowing them to enjoy the creative
@@ -56,3 +78,13 @@ $response = $kernel->handle(
 $response->send();
 
 $kernel->terminate($request, $response);
+=======
+| Once we have the application, we can simply call the run method,
+| which will execute the request and send the response back to
+| the client's browser allowing them to enjoy the creative
+| and wonderful application we have whipped up for them.
+|
+*/
+
+$app->run();
+>>>>>>> a61f3c01af269b2f6ff6a32200732e22494623d0
