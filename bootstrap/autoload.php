@@ -27,6 +27,12 @@ require __DIR__.'/../vendor/autoload.php';
 |
 */
 
+<<<<<<< HEAD
+$compiledPath = __DIR__.'/cache/compiled.php';
+
+if (file_exists($compiledPath)) {
+    require $compiledPath;
+=======
 if (file_exists($compiled = __DIR__.'/compiled.php'))
 {
 	require $compiled;
@@ -72,4 +78,5 @@ Illuminate\Support\ClassLoader::register();
 if (is_dir($workbench = __DIR__.'/../workbench'))
 {
 	Illuminate\Workbench\Starter::start($workbench);
+>>>>>>> a61f3c01af269b2f6ff6a32200732e22494623d0
 }

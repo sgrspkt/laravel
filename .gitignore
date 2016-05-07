@@ -1,0 +1,20 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+/vendor
+/node_modules
+/public/storage
+Homestead.yaml
+Homestead.json
+.env
+=======
+/bootstrap/compiled.php
+/vendor
+composer.phar
+composer.lock
+.env.*.php
+.env.php
+.DS_Store
+Thumbs.db
+>>>>>>> a61f3c01af269b2f6ff6a32200732e22494623d0
+>>>>>>> dev1

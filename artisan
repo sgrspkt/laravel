@@ -15,6 +15,9 @@
 
 require __DIR__.'/bootstrap/autoload.php';
 
+<<<<<<< HEAD
+$app = require_once __DIR__.'/bootstrap/app.php';
+=======
 /*
 |--------------------------------------------------------------------------
 | Turn On The Lights
@@ -44,6 +47,7 @@ $app = require_once __DIR__.'/bootstrap/start.php';
 $app->setRequestForConsoleEnvironment();
 
 $artisan = Illuminate\Console\Application::start($app);
+>>>>>>> a61f3c01af269b2f6ff6a32200732e22494623d0
 
 /*
 |--------------------------------------------------------------------------
@@ -56,7 +60,16 @@ $artisan = Illuminate\Console\Application::start($app);
 |
 */
 
+<<<<<<< HEAD
+$kernel = $app->make(Illuminate\Contracts\Console\Kernel::class);
+
+$status = $kernel->handle(
+    $input = new Symfony\Component\Console\Input\ArgvInput,
+    new Symfony\Component\Console\Output\ConsoleOutput
+);
+=======
 $status = $artisan->run();
+>>>>>>> a61f3c01af269b2f6ff6a32200732e22494623d0
 
 /*
 |--------------------------------------------------------------------------
@@ -69,6 +82,10 @@ $status = $artisan->run();
 |
 */
 
+<<<<<<< HEAD
+$kernel->terminate($input, $status);
+=======
 $app->shutdown();
+>>>>>>> a61f3c01af269b2f6ff6a32200732e22494623d0
 
 exit($status);
