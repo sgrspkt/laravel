@@ -1,6 +1,5 @@
 
-
-
+/sagar_sapkota.txt
 /vendor
 /node_modules
 /public/storage
@@ -16,5 +15,5 @@ composer.lock
 .env.php
 .DS_Store
 Thumbs.db
-sagar_sapkota.txt
+
 
