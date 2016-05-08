@@ -1,6 +1,6 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
+
+
+
 /vendor
 /node_modules
 /public/storage
@@ -16,5 +16,5 @@ composer.lock
 .env.php
 .DS_Store
 Thumbs.db
->>>>>>> a61f3c01af269b2f6ff6a32200732e22494623d0
->>>>>>> dev1
+sagar_sapkota.txt
+
